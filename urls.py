@@ -1,14 +1,20 @@
-from django.conf.urls import include, url
-from django.contrib import admin
+from django.conf.urls import url
 
-from cse import views
+from . import views
 
 urlpatterns = [
-    # Examples:
-    # url(r'^$', 'agnimithra2k16.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^$', views.index, name="index"),
-    url(r'^cse/', include('cse.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.index, name='index'),
+    url(r'^megaevents', views.megaevents, name='megaevents'),
+    url(r'^funbox', views.funbox, name='funbox'),
+    url(r'^techeve', views.techeve, name='techeve'),
+    url(r'^register', views.register, name='register'),
+    url(r'^admitcard', views.admitcard, name='admitcard'),
+    url(r'^sitecredits', views.sitecredits, name='sitecredits'),
+    url(r'^candidates', views.candidates, name='candidates'),
+    url(r'^accomodation', views.accomodation, name='accomodation'),
+    url(r'^paymentview', views.paymentview, name='paymentview'),
+    url(r'^onspot', views.onspot, name='onspot'),
+    url(r'^online', views.online, name='online'),
+    url(r'^setpaid', views.setpaid, name='setpaid'),
+    url(r'^paid', views.paid, name='paid'),
 ]
