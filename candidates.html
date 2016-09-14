@@ -1,0 +1,48 @@
+{% extends "bootstrap.html" %}
+
+{% block title %}Agnimithra 2k16|CSE-Registered{% endblock %}
+
+{% block content %}
+<div class="container">
+  <a onclick="window.print()"><img src="/static/img/printer.png" height="20px" width="20px"/>Click Here to print</a>
+  <center>
+  <br>
+  <h4>Agnimithra 2k16</h4>
+  <h5>Department of Computer Science</h5>
+  <h5>Anna University-Villupuram Campus</h5>
+  <h4>Registered Candidates</h4>
+  </center>
+  <div class="col-md-12">
+  {% if persons %}
+    <table class="table table-striped text-left" width="100%">
+      <thead>
+	    <tr>
+	      <th><center>ID</center></th>
+	      <th><center>Name</center></th>
+          <th><center>Email</center></th>
+	      <th><center>College</center></th>
+	      <th><center>Dept</center></th>
+	      <th><center>ACC</center></th>
+	    </tr>
+      </thead>
+      <tbody>
+        {% for person in persons %}
+        <tr>
+	      <td>{{ person.id }}</td>
+          <td>{{ person.candidate }}</td>
+	      <td>{{ person.mailid }}</td>
+	      <td>{{ person.college }}</td>
+	      <td>{{ person.department }}</td>
+	      <td>{{ person.accomodation }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% else %} 
+    <h3>No Candidates Registered :(</h1>
+  {% endif %} 
+  <h3>Count: {{ persons.count }}</h3>
+  </div>
+</div>
+
+{% endblock content %}

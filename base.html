@@ -1,0 +1,54 @@
+{% extends "bootstrap.html" %}
+
+{% block title %}Agnimithra 2k16|CSE{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-yellow navbar-fixed-top box-shadow">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle nav-bar" data-toggle="collapse" data-target="#mynavbar">
+         <img class="img-responsive" src="/static/img/minus.svg" width="22px" height="22px"></img>
+      </button>
+      <a class="navbar-brand logo" href="/cse/#home">
+   	    Agnimithra
+      </a>      
+    </div>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="nav navbar-nav navbar-right">
+        {% block navbar_right %}
+        {% endblock %}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}
+
+{% block footer %}
+<div class="container-fluid" style="background-color: #414141;">
+  <div>
+  <div class="col-md-3">
+    <h3 class="text-yellow">Agnimithra 2k16</h3>
+  </div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3"></div>
+  <div class="col-md-3" style="margin-top: 20px;">
+    <p class="text-yellow" style="font-size: 18px;">Any queries feel free to ask</p>
+    <p class="text-yellow" style="font-size: 16px;">Deepak 9566308221</p>
+    <p class="text-yellow" style="font-size: 16px;">Murugeshwaran 9585810237</p>
+    <a class="link1" href="/cse/sitecredits" style="color: #2196f3; font-size: 18px;">Site Credits</a>
+  </div>
+  </div>
+  <div class="col-md-12">
+    <center>
+    <a href="/cse/megaevents" style="text-decoration: none; font-size:16px; color: #2196f3;">Megaevents&nbsp;</a>
+    <a href="/cse/techeve" style="text-decoration: none; font-size:16px; color: #2196f3;">|&nbsp;Tech Eve&nbsp;</a>
+    <a href="/cse/funbox" style="text-decoration: none; font-size:16px; color: #2196f3;">|&nbsp;Fun Box&nbsp;</a>
+    <a href="/cse/register" style="text-decoration: none; font-size:16px; color: #2196f3;">|&nbsp;Register</a></center>
+    <center><p class="text-yellow">Copyleft License</p></center>
+  </div>   
+</div>
+{% endblock %}

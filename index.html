@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block title %}Agnimithra 2k16|CSE{% endblock %}
+
+{% block body_attribs %} style="background-color: #f1f2f6;"{% endblock body_attribs%}
+
+{% block navbar_right %}
+  <li><a href="#workshops">WORKSHOPS</a></li>
+  <li><a href="#presentation1">PRESENTATION</a></li>
+  <li><a href="#techeve">TECH EVE</a></li>
+  <li><a href="#funbox">FUN BOX</a></li>
+  <li><a href="#contactus">CONTACT US</a></li>
+  <li><a href="#register">REGISTER</a></li>
+{%endblock %}
+
+{% block content %}
+<div class="container-fluid" style="background-color: #414141;" id="home">
+  <center>
+    <img class="marginTop70 img-responsive" src="/static/img/agni.png" style="align: center; padding-top:20px;" height="200px" width="200px" alt="agnimithra2k16"/>
+    <h1 class="text-pink" style="font-size:60px;">Agnimithra 2k16</h1>
+    <h2 class="text-pink">Department of Computer Science and Engineering</h2>
+    <h2 class="text-pink">March 23 and 24</h2></br>
+    <h4 class="text-pink">Registration Fees Rs. 400</h4>
+    <i><p class="text-pink">(*On spot payment only)</p></i>
+    <a href="#workshops"><img class="img-responsive" height="80px;" width="80px;" style="margin-top:30px; margin-bottom: 30px;"src="/static/img/downarrow.svg" alt="downarrow"/></a>
+  </center>
+</div>
+
+<div id="workshops" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Workshops</h1></br>
+  </center>
+  <div class="col-md-6">
+    </br><center>
+    <div class="jumbotron box-shadow">
+      <a href="/cse/megaevents#aurduino"><img class="img-responsive size-150" src="/static/img/arduino.svg" alt="aurduino"/></a><br/>
+      <p style="margin-top: 8px;font-size: 22px;">Arduino is an open-source prototyping platform based on easy-to-use hardware and software.</p>
+    </div>
+    </center>
+  </div>
+  <div class="col-md-6">
+    </br><center>
+    <div class="jumbotron box-shadow">
+      <a href="/cse/megaevents#workshop2"><img class="img-responsive size-150" src="/static/img/flask.svg" alt="workshop2"/></a><br/>
+      <p style="font-size: 22px; margin-top: 8px;">Flask is a micro web framework written in <b>Python</b>. Workshop includes basics of Python and Flask</p>
+    </div>
+    </center>
+  </div></br></br>
+</div>
+
+<div id="presentation1" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Presentation</h1></br>
+    <a href="/cse/megaevents#presentation"><img class="img-responsive size-150" src="/static/img/presentation.svg" alt="presentation"/></a></br>
+  </center>
+  <div class="col-md-6">
+    <center>
+      <p class="text-black" style="font-size: 24px;">Network Security</p>
+      <p class="text-black" style="font-size: 24px;">Machine Learning</p>
+      <p class="text-black" style="font-size: 24px;">Virtual Reality</p>
+      <p class="text-black" style="font-size: 24px;">Image Processing</p>
+      <p class="text-black" style="font-size: 24px;">Wireless Networking</p>
+    </center>
+  </div>
+  <div class="col-md-6">
+    <center>
+      <p class="text-black" style="font-size: 24px;">Mesh Network</p>
+      <p class="text-black" style="font-size: 24px;">Cloud Computing</p>
+      <p class="text-black" style="font-size: 24px;">Big Data</p>
+      <p class="text-black" style="font-size: 24px;">Distributed Systems</p>
+      <p class="text-black" style="font-size: 24px;">Ontology(Information Science)</p>
+    </center>
+  </div>
+  <i><p class="text-black" style="font-size: 22px;" align="middle">*Innovative ideas on computing are also invited</p></i>
+</div>
+
+<div id="techeve" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Tech Eve</h1></br></br>
+  <div>
+    <center>
+      <div class="col-md-4">
+        <a href="/cse/techeve#codecrush"><img class="img-responsive size-150" src="/static/img/codecrush.svg" alt="code crush"/></a>
+        <p style="font-size: 24px;">Code Crush</p></br>
+      </div>
+      <div class="col-md-4">
+        <a href="/cse/techeve#whoisgeek"><img class="img-responsive size-150" src="/static/img/whoisgeek.svg" alt="who is geek?"/></a>
+        <p style="font-size: 24px;">Who is Geek?</p></br>
+      </div>
+      <div class="col-md-4">
+        <a href="/cse/techeve#quizitto"><img class="img-responsive size-150" src="/static/img/quizitto.svg" alt="quizitto"/></a>
+        <p style="font-size: 24px;">Quizitto</p></br>
+      </div>
+      </center>
+  </div>
+  <div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4"></br>
+      <center>
+      <a href="/cse/techeve#appmania"><img class="img-responsive size-150" src="/static/img/appmania.svg" alt="appmania"/></a>
+      <p style="font-size: 24px;">Appmania</p>
+      </center>
+    </div>
+    <div class="col-md-4"></br>
+      <center>
+      <a href="/cse/techeve#crazyengineer"><img class="img-responsive size-150" src="/static/img/crazyengineer.svg" alt="crazy engineer"/></a>
+      <p style="font-size: 24px;">Crazy Engineer</p>
+      </center>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
+
+<div id="funbox" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Fun Box</h1></br>
+  <div class="col-md-3"></div>
+  <div class="col-md-3">
+    <div class="jumbotron box-shadow">
+      <a href="/cse/funbox#twiddlethumbs"><img class="img-responsive size-150" src="/static/img/twiddlethumbs.svg" alt="twiddle thumbs"/></a></br>
+      <p class="text-black" style="font-size: 22px; margin-left: -19px;">TwiddleThumbs</p>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="jumbotron box-shadow">
+      <a href="/cse/funbox#joyboom"><img class="img-responsive size-150" src="/static/img/joyboom.svg" alt="joy boom"/></a></br>
+      <p class="text-black" style="font-size: 22px;">Joy Boom</p>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</center>
+</div>
+
+<div id="register" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+  <div>
+    <h1 class="text-yellow marginTop50" style="font-size: 50px;">Register</h1>
+    <p class="text-black" style="font-size: 14px;"><i>(*On spot registration is also available)</i></p></br>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <form method="POST" action="/cse/register">
+        <div class="form-group">
+          <input type="text" class="form-control" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="college" placeholder="College" required>
+        </div>
+        <div class="form-group">
+          <h4 class="text-black" align="left">Department</h4>
+          <select class="form-control" id="sel1" name="department">
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group" align="left">
+          <h4 class="text-black">Accomodation</h4>
+    	  <input class="text-black" id="m" type="radio" name="accomodation" value="Yes"/>
+	      <label class="radioLabel" for="m">Yes</label>
+          <input class="text-black" style="margin-left: 20px;" id="n" type="radio" name="accomodation" value="No" checked/>
+	      <label class="radioLabel" for="n">No</label>
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-blue">Register</button>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  </center>
+</div>
+
+<div id="register" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+  <div>
+    <h1 class="text-yellow marginTop50" style="font-size: 40px;">Already Registered!</h1>
+    <p class="text-black" style="font-size: 20px;">Please download the admit card</p></br>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <form method="POST" action="/cse/admitcard">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="E-mail" required>
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-blue">Download Admit Card</button>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  </center>
+</div>
+
+<div id="contactus" style="margin-top: -50px; margin-bottom:50px;"></div>
+<div class="container bg-white">
+  <center>
+  <h1 class="text-yellow marginTop50" style="font-size: 50px;">Contact Us</h1></br>
+  <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through phone or whatsapp-please click here!">
+    <a href="#popover" title="Deepak Kumar" data-toggle="popover" data-placement="bottom" data-content="9566308221">
+      <img class="img-responsive size-70" src="/static/img/phone.svg" alt="phone"/>
+    </a></br>
+  </div>
+  <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through email-please click here!">
+    <a href="#popover" title="Mail Us" data-toggle="popover" data-placement="bottom" data-content="agnimithra2k16cse@gmail.com">
+      <img class="img-responsive size-70" src="/static/img/googleplus.svg" alt="mail"/>
+    </a></br>
+  </div>
+  <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get us through facebook-please click here!">
+    <a href="https://www.facebook.com/Agnimithra2k16-CSE-1124113250972228" target="_blank">
+      <img class="img-responsive size-70" src="/static/img/facebook.svg" alt="facebook"/>
+    </a></br>   
+  </div>
+  <div class="col-md-3" href="#tooltip" data-toggle="tooltip" title="Get the source of this web app from Gitlab!">
+    <a href="https://gitlab.com/agnimithra2k16/agnimithra-app" target="_blank">
+        <img class="img-responsive size-70" src="/static/img/gitlab.svg" alt="gitlab"/>
+    </a></br>
+  </div>
+</div>
+{% endblock %}

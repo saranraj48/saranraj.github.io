@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block title %}Agnimithra 2k16|CSE-Onspot Registration{% endblock %}
+
+{% block body_attribs %} style="background-color: #f1f2f6;"{% endblock body_attribs%}
+
+{% block navbar_right %}
+  <li><a href="/cse/onspot">ONSPOT</a></li>
+  <li><a href="/cse/online">ONLINE</a></li>
+{%endblock %}
+
+{% block content %}
+<div class="container bg-white">
+  <center>
+  <div>
+    <h1 class="text-yellow" style="font-size: 50px; margin-top: 80px;">Update Online Registration</h1></br>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      {% if message %}
+      <div class="alert alert-warning fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        {{ message }}
+      </div>
+      {% endif %}
+      <form method="POST" action="/cse/setpaid">
+        <div class="form-group">
+          <input type="text" class="form-control" name="id" placeholder="ID" required>
+        </div>
+        {% csrf_token %}
+        <button type="submit" class="btn btn-blue">Update</button></br></br>
+      </form>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  </center>
+</div>
+{% endblock content %}
